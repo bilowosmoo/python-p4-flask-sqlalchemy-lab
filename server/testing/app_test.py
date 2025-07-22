@@ -87,3 +87,6 @@ class TestApp:
         id = 1
         response = app.test_client().get(f'/enclosure/{id}')
         assert len(animal_ul.findall(response.data.decode()))
+
+    def test_app():
+        import app
